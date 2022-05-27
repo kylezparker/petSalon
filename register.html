@@ -12,17 +12,37 @@
 
 
     <header>
-        <h1>The Fashion Pet</h1>
+        <!-- <h1>The Fashion Pet</h1> -->
 
-        <nav>
+        <!-- <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="register.html">Register</a>
-        </nav>
+        </nav> -->
+        <div class="navContainer">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html" style="font-size:30px;">The Fashion Pet</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link" href="about.html">About</a>
+                      <a class="nav-link" href="services.html">Services</a>
+                      <a class="nav-link" href="register.html">Register</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+          </div>
+
     </header>
     <main>
-        <h2>Welcome to the Fashion Pet</h2>
+        <!-- <h2>Welcome to the Fashion Pet</h2> -->
+        <div class="formContainer">
         <div class="container">
             <div class="mb-3">
                 <label class="form-label">name:</label>
@@ -49,9 +69,22 @@
                 </select>
             </div>
             <div class="mb-3">
+                <label class="form-label">Your name:</label>
+                <input class="form-control" type="text" placeholder="add your name" id="txtOwner">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone number:</label>
+                <input class="form-control" type="text" placeholder="add your phone number" id="txtPhone">
+            </div>
+
+
+            <!-- add owner and phone div -->
+
+            <div class="mb-3">
                 <button class="btn btn-primary" onclick="register();">Register</button>
             </div>
 
+        </div>
         </div>
         <!-- registration form
         name age gender breed service owner phone -->

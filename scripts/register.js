@@ -70,14 +70,17 @@ let petAge=document.getElementById("txtAge").value;
 let petGender=document.getElementById("txtGender").value;
 let petBreed=document.getElementById("txtBreed").value;
 let petService=document.getElementById("selService").value;
+let petOwner=document.getElementById("txtOwner").value;
+let petPhone=document.getElementById("txtPhone").value;
 
 //create the object using the constructor
-let newPet= new Pet(petName,petAge,petGender,petBreed,petService);
+let newPet= new Pet(petName,petAge,petGender,petBreed,petService,petOwner,petPhone);
 //push the object in on the array
 salon.pets.push(newPet);
 //display it on the console
 console.log(newPet);
 console.log(salon.pets);
+clearForm();
 }
 
 
@@ -95,6 +98,16 @@ function displaySalonInfo(){
 
 }
 
+function clearForm(){
+document.getElementById("txtName").value="";
+document.getElementById("txtAge").value="";
+document.getElementById("txtGender").value="";
+document.getElementById("txtBreed").value="";
+document.getElementById("selService").value="";
+document.getElementById("txtOwner").value="";
+document.getElementById("txtPhone").value="";
+}
+
 
 
 
@@ -110,7 +123,7 @@ function displaySalonInfo(){
 
 function init(){
 //hook events
-displaySalonInfo();
+//displaySalonInfo();
 console.log(amy,lemon);
 salon.pets.push(amy,lemon);
 }
