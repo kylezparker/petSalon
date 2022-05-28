@@ -5,7 +5,7 @@ let salon={
         street:"palomar",
         zip:"223456",
         city:"san diego",
-        number:"265-k",
+        number:"265-k"
     },
     hours:{
         open:"9am",

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- user input stored in txtTask, registerTask called when Add button is clicked -->
+    <header>
+        <h1>My ToDo Task Manager</h1>
+        <div>
+            <!-- <label>New Task:</label> -->
+            <input type="text" id="txtTask">
+            <button class="btn" onclick="displaySalonInfo();">Add</button>
+        </div>
+    </header>
+    <main>
+        <!-- todoList id is used as location to display tasks entered in registerTask function -->
+        <h2>ToDo List</h2>
+        <ul id="todoList">
+        </ul>
+    </main>
+    
+    <script src="scripts/practice3.js"></script>
+</body>
+</html>
