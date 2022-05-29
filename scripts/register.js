@@ -62,6 +62,18 @@ let amy=new Pet('amy', 5, "female","cat","haircut","kyle",55555555555);
 let lemon=new Pet('lemon', 5, "female","cat","haircut","kyle",55555555555);
 let george=new Pet('george', 5, "male","cat","haircut","kyle",55555555555);
 
+
+
+function isValid(aPet){
+    let valid=true;
+    if(aPet.name=="" || aPet.service=="" || aPet.phone==""){
+        //if we arrive here, pet is not valid
+        valid=false;
+    }
+
+    return valid;
+}
+
 function register(){
 console.log("Registering");
 //get the info from the inputs ****getElementById  .value
@@ -75,13 +87,20 @@ let petPhone=document.getElementById("txtPhone").value;
 
 //create the object using the constructor
 let newPet= new Pet(petName,petAge,petGender,petBreed,petService,petOwner,petPhone);
+if(isValid(newPet)==true){
 //push the object in on the array
 salon.pets.push(newPet);
 //display it on the console
 console.log(newPet);
 console.log(salon.pets);
+displayCards();
 clearForm();
 }
+else{
+    alert("add a name for the pet");
+}
+}
+
 
 
 
@@ -106,6 +125,7 @@ document.getElementById("txtBreed").value="";
 document.getElementById("selService").value="";
 document.getElementById("txtOwner").value="";
 document.getElementById("txtPhone").value="";
+//or petName.valaue="";
 }
 
 
@@ -124,8 +144,29 @@ document.getElementById("txtPhone").value="";
 function init(){
 //hook events
 //displaySalonInfo();
-console.log(amy,lemon);
-salon.pets.push(amy,lemon);
+console.log(amy,lemon,george);
+salon.pets.push(amy,lemon,george);
+displayCards();
 }
 
 window.onload=init;
+//getElementByTagName and getElementByClassName
+//console.log(inputs);
+//let inputs=document.getElementsByTagName('input');
+//document.getElementById('').style.display.'none' or 'block'; or ById().remove()
+
+//function clear(){
+//     let inputs=document.getElementsByTagName('input');
+//let inputs=document.querySelector("input");
+//     for(let i=0;i<inputs.length;i++){
+//         inputs[i].value="";
+//     }
+
+// document.getElementById("selService").value="default"
+// }
+
+//document.querySelector('input'); --returns first example OR querySelectorAll --gives all
+
+// function clearForm(){
+//     $("input").val("");
+// }
