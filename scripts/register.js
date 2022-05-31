@@ -58,9 +58,9 @@ function Pet(name,age,gender,breed,service,owner,phone){
     this.phone=phone; //
 }
 
-let amy=new Pet('amy', 5, "female","cat","haircut","kyle",55555555555);
-let lemon=new Pet('lemon', 5, "female","cat","haircut","kyle",55555555555);
-let george=new Pet('george', 5, "male","cat","haircut","kyle",55555555555);
+let amy=new Pet('amy', 5, "female","cat","grooming","kyle",55555555555);
+let lemon=new Pet('lemon', 5, "female","cat","grooming","kyle",55555555555);
+let george=new Pet('george', 5, "male","cat","grooming","kyle",55555555555);
 
 
 
@@ -97,7 +97,7 @@ displayTable();
 clearForm();
 }
 else{
-    alert("add a name for the pet");
+    alert("please fill all fields");
 }
 }
 

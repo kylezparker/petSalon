@@ -89,3 +89,7 @@ function displayTable(){
 // <td>${pet.owner}</td>
 // <td>${pet.phone}</td>
 // </tr>`; */}
+
+
+
+// {/* <th scope="row">${pet.name}</th> */}

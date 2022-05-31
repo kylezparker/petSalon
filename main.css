@@ -9,9 +9,9 @@
 
 }
 
-.petContainer{
+/* .petContainer{
     display:flex;
-}
+} */
 
 /* #pets{
     display:grid;
@@ -26,3 +26,162 @@
     border-radius:10px;
     padding:1rem;
 } */
+
+
+/* .displayTable{
+    margin:5% 5% 5% 5%;
+} */
+
+.displayContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:15%;
+    margin-left:15%;
+    margin-top:4%;
+    margin-bottom:10%;
+}
+button{
+    margin-top:1%;
+}
+h2{
+    text-align:center;
+    padding-bottom:15px;
+   
+}
+h2 span{
+    font-size:50px;
+    
+}
+div.bar{
+    border-bottom:3px solid black;
+    margin-right:16%;
+    margin-left:16%;
+    margin-bottom:75px;
+}
+footer{
+    padding-top:10px;
+    padding-left:10px;
+    background-color:#dedede;
+    margin-right:17%;
+    margin-left:17%;
+    text-align:left;
+    padding-bottom:.5px;
+}
+a{
+    font-weight:500;
+    color:black;
+    padding-right:20px;
+}
+span{
+    font-size:20px;
+}
+#copyright{
+    font-size:14px;
+}
+.fBody{
+    font-size:11px;
+}
+.form-label{
+    font-weight:500;
+}
+div.bar2{
+    border-bottom:3px solid black;
+    margin-right:15%;
+    margin-left:15%;
+    margin-bottom:75px;
+
+}
+#services{
+    margin:0 15% 75px 15%;
+
+}
+.services{
+    padding-bottom:10px;
+    font-weight:400;
+   
+}
+h3{
+    word-spacing:3px;
+    padding-bottom:5px;
+}
+h3 span{
+    font-size:30px;
+}
+.home{
+    font-size:18px;
+    text-align:justify;
+    margin:0 17% 75px 17%;
+}
+#location{
+    font-size:25px;
+    padding-right:5px;
+    font-weight:500;
+    color:green;
+}
+#hours{
+    font-size:25px;
+    padding-right:5px;
+    font-weight:500;
+    color:red;
+}
+#contact{
+    font-size:25px;
+    padding-right:5px;
+    font-weight:500;
+    color:darkorchid;
+}
+.index{
+    font-weight:450;
+    padding-bottom:10px;
+}
+div.bar3{
+    border-bottom:3px solid black;
+    margin-right:15%;
+    margin-left:15%;
+    margin-bottom:75px;
+}
+.about{
+    font-size:18px;
+    font-weight:450;
+    text-align:justify;
+    margin:0 17% 75px 17%;
+
+}
+#early{
+    word-spacing:2px;
+    font-size:25px;
+    padding-right:15px;
+    font-weight:500;
+    color:green;
+}
+#education{
+    word-spacing:2px;
+    font-size:25px;
+    padding-right:15px;
+    font-weight:500;
+    color:red;
+}
+#employment{
+    word-spacing:2px;
+    font-size:25px;
+    padding-right:15px;
+    font-weight:500;
+    color:darkorchid;
+}
+#interests{
+    word-spacing:2px;
+    font-size:25px;
+    padding-right:15px;
+    font-weight:500;
+    color:teal;
+}
+.bio{
+    padding-bottom:10px;
+}
+#books{
+    font-size:25px;
+}
+#specialFooter{
+    margin-top:150px;
+}
