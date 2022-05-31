@@ -93,7 +93,7 @@ salon.pets.push(newPet);
 //display it on the console
 console.log(newPet);
 console.log(salon.pets);
-displayCards();
+displayTable();
 clearForm();
 }
 else{
@@ -125,7 +125,7 @@ document.getElementById("txtBreed").value="";
 document.getElementById("selService").value="";
 document.getElementById("txtOwner").value="";
 document.getElementById("txtPhone").value="";
-//or petName.valaue="";
+//or petName.value="";
 }
 
 
@@ -146,7 +146,7 @@ function init(){
 //displaySalonInfo();
 console.log(amy,lemon,george);
 salon.pets.push(amy,lemon,george);
-displayCards();
+displayTable();
 }
 
 window.onload=init;
