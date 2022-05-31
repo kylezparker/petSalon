@@ -42,7 +42,7 @@ function displayTable(){
         }
     // $("#pets").append(tmp);
     petDiv.append(tmp);
-    petDiv.append("<tbody>")
+    petDiv.append("</tbody>")
 }
 // function displa
 
