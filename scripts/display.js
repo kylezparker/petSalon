@@ -26,12 +26,12 @@
 // // }
 function displayTable(){
     let petDiv=$("#pets");
-    petDiv.html(`<thead><tr><th scope="col">Name</th><th scope="col">Age</th><th scope="col">Gender</th><th scope="col">Breed</th><th scope="col">Service</th><th scope="col">Owner</th><th scope="col">Phone</th></tr></thead><tbody>`);
+    petDiv.html(`<thead class="center2"><tr><th scope="col">Name</th><th scope="col">Age</th><th scope="col">Gender</th><th scope="col">Breed</th><th scope="col">Service</th><th scope="col">Owner</th><th scope="col">Phone</th></tr></thead><tbody>`);
     let tmp="";
     for(let i=0;i<salon.pets.length;i++){
         let pet=salon.pets[i];
         tmp+=`<tr>
-            <th scope="row">${pet.name}</th>
+            <th class="center" scope="row">${pet.name}</th>
             <td>${pet.age}</td>
             <td>${pet.gender}</td>
             <td>${pet.breed}</td>
@@ -42,7 +42,7 @@ function displayTable(){
         }
     // $("#pets").append(tmp);
     petDiv.append(tmp);
-    petDiv.append("</tbody>")
+    petDiv.append("</tbody>");
 }
 // function displa
 

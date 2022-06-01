@@ -12,38 +12,6 @@ let salon={
         close:"5pm"
     },
     phone:"555-555-5555",
-    // pets:[
-    //     {
-    //         name:"scooby",
-    //         age:50,
-    //         gender:"male",
-    //         breed:"dane",
-    //         service:"grooming",
-    //         owner:"shaggy",
-    //         phone:"8888888888"
-
-    // },
-    // {
-    //     name:"lemon",
-    //     age:5,
-    //     gender:"female",
-    //     breed:"cat",
-    //     service:"grooming",
-    //     owner:"kyle",
-    //     phone:"8888888888"
-
-    // },
-    // {
-    //     name:"amy",
-    //     age:5,
-    //     gender:"female",
-    //     breed:"cat",
-    //     service:"grooming",
-    //     owner:"kyle",
-    //     phone:"8888888888"
-
-    // }
-    // ]
     pets:[]
 }
 
@@ -58,19 +26,17 @@ function Pet(name,age,gender,breed,service,owner,phone){
     this.phone=phone; //
 }
 
-let amy=new Pet('amy', 5, "female","cat","grooming","kyle",55555555555);
-let lemon=new Pet('lemon', 5, "female","cat","grooming","kyle",55555555555);
-let george=new Pet('george', 5, "male","cat","grooming","kyle",55555555555);
+let amy=new Pet('amy', 5, "female","cat","grooming","kyle","(555) 555-5555");
+let lemon=new Pet('lemon', 5, "female","cat","grooming","kyle","(555) 555-5555");
+let george=new Pet('george', 5, "male","cat","grooming","kyle","(555) 555-5555");
 
 
 
 function isValid(aPet){
     let valid=true;
     if(aPet.name=="" || aPet.service=="" || aPet.phone==""){
-        //if we arrive here, pet is not valid
         valid=false;
     }
-
     return valid;
 }
 
