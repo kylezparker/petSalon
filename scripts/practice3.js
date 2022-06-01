@@ -1,3 +1,7 @@
+//file I used to practice
+
+
+
 //practice for friday:do unit 3 assignments, particularly toDo app, again. do petSalon again.
 //what are the tools I need practice with: object literals and what can be put inside them.use of the console to test things. arrays, filled and empty.pushing things into arrays.object constructors and using them to create objects which can then be put into array elements.for loops.using getElementById to: retrieve values, display things in html, delete created things, id created things by attaching "counters", clear forms. Some HTML things: forms, labels, buttons. CSS: particularly BootStrap.
 
